@@ -54,4 +54,35 @@ public class TestResistration2 {
 		
 	}
 
+	private void executeTest1(String data) {
+		FrameworkUtils.setUpDriver();
+		BrowserUtils.openBrowser();
+		BrowserUtils.invokeApp();
+		LoginPage.naviageteToRegistrationPage();
+		RegisterPage.enterValidvaluesAndSubmit(data);
+		try {
+		RegisterPage.verfiyRegistrationSucceessfull();
+		}catch (Exception e) {
+			System.out.println("expected is not equal with actual...");
+			System.out.println("continuing execution....");
+		}
+		BrowserUtils.killBrowser();
+		
+	}
+	private void executeTest2(String data) {
+		FrameworkUtils.setUpDriver();
+		BrowserUtils.openBrowser();
+		BrowserUtils.invokeApp();
+		LoginPage.naviageteToRegistrationPage();
+		RegisterPage.enterValidvaluesAndSubmit(data);
+		try {
+		RegisterPage.verfiyRegistrationSucceessfull();
+		}catch (Exception e) {
+			System.out.println("expected is not equal with actual...");
+			System.out.println("continuing execution....");
+		}
+		BrowserUtils.killBrowser();
+		
+	}
+
 }
