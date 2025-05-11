@@ -34,6 +34,10 @@ public class TestResistration3 {
 			executeTest(tempdata);
 		}
 		w.close();
+		w.close();
+		w.close();
+		w.close();
+		System.out.println("test got completed");
 		
 	
 	}
