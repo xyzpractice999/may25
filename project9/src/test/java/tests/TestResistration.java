@@ -33,7 +33,8 @@ public class TestResistration {
 			String tempdata=s.getRow(row).getCell(1).getStringCellValue();
 			executeTest(tempdata);
 		}
-		//w.close();
+		System.out.println("dummy code");
+		w.close();
 		
 	
 	}
