@@ -34,6 +34,7 @@ public class TestResistration {
 			executeTest(tempdata);
 		}
 		w.close();
+		System.out.println("dummy code local");
 		
 	
 	}
